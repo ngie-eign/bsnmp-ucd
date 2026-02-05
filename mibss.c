@@ -388,4 +388,3 @@ op_systemStats(struct snmp_context *context __unused, struct snmp_value *value,
 
 	return (ret);
 };
-

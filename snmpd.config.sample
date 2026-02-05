@@ -2,7 +2,7 @@
 #
 # Only part related to bsnmp-ucd is shown.
 
-# 
+#
 # bsnmp-ucd (8)
 #
 begemotSnmpdModulePath."ucd" = "/usr/local/lib/snmp_ucd.so"
