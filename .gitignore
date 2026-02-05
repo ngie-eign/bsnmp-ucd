@@ -1,0 +1,10 @@
+*.depend*
+*.o
+*.pico
+*.pieo
+snmp_ucd.so*
+*.[0-9].gz
+
+ucd_oid.h
+ucd_tree.c
+ucd_tree.h
