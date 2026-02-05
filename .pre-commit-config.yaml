@@ -1,0 +1,22 @@
+---
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v6.0.0
+      hooks:
+          - id: check-yaml
+          - id: end-of-file-fixer
+          - id: trailing-whitespace
+    # NOTE: This solution was chosen over https://github.com/pre-commit/mirrors-clang-format
+    # as that version relies on clang-format project python wheels to function, which are not
+    # produced for FreeBSD.
+    #
+    # A copy of `clang-format`, et al, can be easily installed via
+    # `pkg install include-what-you-use llvm21`, etc.
+    - repo: https://github.com/pocc/pre-commit-hooks
+      rev: v1.3.5
+      hooks:
+          - id: clang-format
+          # NOTE: `clang-tidy` and `include-what-you-use` don't work with
+          # `.OBJDIR` out of the box due to `bsd.snmpmod.mk` generated files.
+          - id: clang-tidy
+          - id: include-what-you-use
