@@ -1,5 +1,3 @@
-# $Id$
-#
 # Example configuration file for bsnmpd(1).
 #
 # Only part related to bsnmp-ucd is shown.

@@ -1,7 +1,7 @@
 # Copyright (c) 2007-2013 Mikolaj Golub
 # All rights reserved.
 #
-# $Id$
+# SPDX-License-Identifier: BSD-2-Clause
 
 PREFIX?=	/usr/local
 LIBDIR=		${PREFIX}/lib
